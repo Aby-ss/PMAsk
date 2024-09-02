@@ -4,7 +4,7 @@ import { useState, useEffect } from 'react';
 import Image from 'next/image';
 import Link from 'next/link';
 
-export default function GratitudeWall() {
+export default function PMAsk() {
 
 
   return (
@@ -19,13 +19,9 @@ export default function GratitudeWall() {
         Desire clear thoughts before bed? Our nightly prompts make reflection easy.
       </p>
       
-      <div className="flex items-center justify-center mt-8 absolute top-[35%]">
-        <Link href="/new/prompts">
-            <button className="bg-blue-800 text-white font-semibold py-4 px-20 rounded-lg mt-4 transition-transform duration-300 hover:scale-105 hover:rotate-3">
-                Start Reflection
-            </button>
-        </Link>
-      </div>
+      <button className="bg-blue-800 text-white font-semibold py-4 px-20 rounded-md mt-4 absolute top-[35%] transition-transform duration-300 hover:scale-105 hover:rotate-3" style={{ borderRadius: '10px' }}>
+        <a href="/new">Start Reflection</a>
+      </button>
 
       <div className="flex space-x-4 mt-8 absolute top-[50%]">
         <div className="bg-red-200 p-10 rounded-lg">
